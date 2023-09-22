@@ -3,7 +3,9 @@
 
 #include <QWidget>
 
+//前向声明
 class MyWidget;
+class QPushButton;
 
 namespace Ui {
 class Welcome;
@@ -21,9 +23,14 @@ private slots:
     void on_runBtn_clicked();
 
 
+    void on_layoutBtn_clicked();
+
+    void on_openBtn_clicked();
+
 private:
     Ui::Welcome *ui;
     MyWidget *mw;
+    QPushButton *closeBtn;
 };
 
 #endif // WELCOME_H

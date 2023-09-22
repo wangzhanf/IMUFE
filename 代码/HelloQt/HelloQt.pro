@@ -27,15 +27,18 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mywidget.cpp \
-    welcome.cpp
+    welcome.cpp \
+    layoutform.cpp
 
 HEADERS += \
         mywidget.h \
-    welcome.h
+    welcome.h \
+    layoutform.h
 
 FORMS += \
         mywidget.ui \
-    welcome.ui
+    welcome.ui \
+    layoutform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
