@@ -20,6 +20,9 @@ private slots:
 
 private:
     Ui::MyWidget *ui;
+
+signals:
+    void mySig(QString title,int num);//声明了一个信号，带有2个参数
 };
 
 #endif // MYWIDGET_H

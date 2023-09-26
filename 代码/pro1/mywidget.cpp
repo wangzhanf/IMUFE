@@ -18,6 +18,12 @@ MyWidget::MyWidget(QWidget *parent) :
     VolForm* vf = new VolForm(this);
 
 
+    //绑定自定义的信号和槽
+    connect(ui->pushButton,&QPushButton::clicked,this,[=](){
+        emit mySig("馒头",6);
+    });
+    connect(this,&MyWidget::mySig,vf,&VolForm::mySlot);
+
 }
 
 MyWidget::~MyWidget()
